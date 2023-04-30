@@ -1,0 +1,18 @@
+{
+  "production": {
+    "port": 5000,
+    "mongodbUri": "",
+    "origin": "http://localhost:3001"
+
+  },
+  "development": {
+    "port": 5001,
+    "mongodbUri": "mongodb://localhost:27017",
+    "origin": "http://localhost:3001"
+  },
+  "test": {
+    "port": 6000,
+    "mongodbUri": "mongodb://localhost:27017/test",
+    "origin": "http://localhost:3001"
+  }
+}

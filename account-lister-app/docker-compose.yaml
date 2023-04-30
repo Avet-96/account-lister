@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  app:
+    image: account-lister/account-lister-app:a48352d
+    container_name: accounts-lister-app
+    ports:
+      - '3001:3001'
+    environment:
+      - ACCOUNT_LISTER_API_URI=http://localhost:5001/api/v1
+      - PORT=3001
+    restart: always
